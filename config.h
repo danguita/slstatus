@@ -65,13 +65,22 @@ static const char unknown_str[] = "-";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ ipv4          , " E: %s | "  , "enp0s20f0u2u1u2" } ,
-	{ wifi_perc     , "W: (%s%% "  , "wlp5s0" }          ,
-	{ wifi_essid    , "%s) "       , "wlp5s0" }          ,
-	{ ipv4          , "%s | "      , "wlp5s0" }          ,
-	{ cpu_perc      , "C: %s%% | " , NULL }              ,
-	{ ram_used      , "M: %s | "   , NULL }              ,
-	{ battery_perc  , "B: %s%% "   , "BAT0" }            ,
-	{ battery_state , "%s | "      , "BAT0" }            ,
-	{ datetime      , "%s"         , "%a %b %d %I:%M " }
+	{ separator     , " "       , NULL }              ,
+	{ ipv4          , "E: %s"   , "enp0s20f0u2u1u2" } ,
+	{ separator     , " | "     , NULL }              ,
+	{ wifi_perc     , "W: %s%%" , "wlp5s0" }          ,
+	{ separator     , " "       , NULL }              ,
+	{ wifi_essid    , "%s"      , "wlp5s0" }          ,
+	{ separator     , " "       , NULL }              ,
+	{ ipv4          , "%s"      , "wlp5s0" }          ,
+	{ separator     , " | "     , NULL }              ,
+	{ cpu_perc      , "C: %s%%" , NULL }              ,
+	{ separator     , " | "     , NULL }              ,
+	{ ram_used      , "M: %s"   , NULL }              ,
+	{ separator     , " | "     , NULL }              ,
+	{ battery_perc  , "B: %s%%" , "BAT0" }            ,
+	{ separator     , " "       , NULL }              ,
+	{ battery_state , "%s"      , "BAT0" }            ,
+	{ separator     , " | "     , NULL }              ,
+	{ datetime      , "%s"      , "%a %b %d %I:%M " }
 };
