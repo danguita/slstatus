@@ -66,13 +66,9 @@ static const char unknown_str[] = "✕";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ separator     , " "       , NULL }              ,
-	{ ipv4          , "E: %s"   , "enp0s20f0u2u1u2" } ,
-	{ separator     , " | "     , NULL }              ,
 	{ wifi_perc     , "W: %s%%" , "wlp5s0" }          ,
 	{ separator     , " "       , NULL }              ,
 	{ wifi_essid    , "%s"      , "wlp5s0" }          ,
-	{ separator     , " "       , NULL }              ,
-	{ ipv4          , "%s"      , "wlp5s0" }          ,
 	{ separator     , " | "     , NULL }              ,
 	{ cpu_perc      , "C: %s%%" , NULL }              ,
 	{ separator     , " | "     , NULL }              ,
