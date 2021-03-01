@@ -65,18 +65,18 @@ static const char unknown_str[] = "✕";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ separator     , " "       , NULL }              ,
-	{ wifi_perc     , "W: %s%%" , "wlp5s0" }          ,
-	{ separator     , " "       , NULL }              ,
-	{ wifi_essid    , "%s"      , "wlp5s0" }          ,
-	{ separator     , " | "     , NULL }              ,
-	{ cpu_perc      , "C: %s%%" , NULL }              ,
-	{ separator     , " | "     , NULL }              ,
-	{ ram_used      , "M: %s"   , NULL }              ,
-	{ separator     , " | "     , NULL }              ,
-	{ battery_perc  , "B: %s%%" , "BAT0" }            ,
-	{ separator     , " "       , NULL }              ,
-	{ battery_state , "%s"      , "BAT0" }            ,
-	{ separator     , " | "     , NULL }              ,
-	{ datetime      , "%s"      , "%a %b %d %I:%M " }
+	{ separator     , " "        , NULL }              ,
+	{ wifi_perc     , "W %s%%"   , "wlp5s0" }          ,
+	{ separator     , " "        , NULL }              ,
+	{ wifi_essid    , "%s"       , "wlp5s0" }          ,
+	{ separator     , " | "      , NULL }              ,
+	{ cpu_perc      , "CPU %s%%" , NULL }              ,
+	{ separator     , " | "      , NULL }              ,
+	{ ram_used      , "MEM %s"   , NULL }              ,
+	{ separator     , " | "      , NULL }              ,
+	{ battery_perc  , "BAT %s%%" , "BAT0" }            ,
+	{ separator     , " "        , NULL }              ,
+	{ battery_state , "%s"       , "BAT0" }            ,
+	{ separator     , " | "      , NULL }              ,
+	{ datetime      , "%s"       , "%a %b %d %I:%M " }
 };
