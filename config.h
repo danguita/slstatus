@@ -65,18 +65,20 @@ static const char unknown_str[] = "✕";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ separator     , " "        , NULL }              ,
-	{ wifi_perc     , "%s%%"     , "wlp0s20f3" }       ,
-	{ separator     , " "        , NULL }              ,
-	{ wifi_essid    , "%s"       , "wlp0s20f3" }       ,
-	{ separator     , " | "      , NULL }              ,
-	{ cpu_perc      , "%s%%"     , NULL }              ,
-	{ separator     , " | "      , NULL }              ,
-	{ ram_used      , "%s"       , NULL }              ,
-	{ separator     , " | "      , NULL }              ,
-	{ battery_perc  , "%s%%"     , "BAT0" }            ,
-	{ separator     , " "        , NULL }              ,
-	{ battery_state , "%s"       , "BAT0" }            ,
-	{ separator     , " | "      , NULL }              ,
+	{ separator     , " "        , NULL }                                      ,
+	{ wifi_perc     , "%s%%"     , "wlp0s20f3" }                               ,
+	{ separator     , " "        , NULL }                                      ,
+	{ wifi_essid    , "%s"       , "wlp0s20f3" }                               ,
+	{ separator     , " | "      , NULL }                                      ,
+	{ cpu_perc      , "%s%%"     , NULL }                                      ,
+	{ separator     , " | "      , NULL }                                      ,
+	{ ram_used      , "%s"       , NULL }                                      ,
+	{ separator     , " | "      , NULL }                                      ,
+	{ battery_perc  , "%s%%"     , "BAT0" }                                    ,
+	{ separator     , " "        , NULL }                                      ,
+	{ battery_state , "%s"       , "BAT0" }                                    ,
+	{ separator     , " "        , NULL }                                      ,
+	{ run_command   , "%.3s"     , "cat /sys/firmware/acpi/platform_profile" } ,
+	{ separator     , " | "      , NULL }                                      ,
 	{ datetime      , "%s"       , "%a %b %d %H:%M:%S " }
 };
