@@ -71,6 +71,5 @@ static const struct arg args[] = {
 	{ ram_used      , " | %s"     , NULL }                                      ,
 	{ battery_perc  , " | %s%%"   , "BAT0" }                                    ,
 	{ battery_state , " %s"       , "BAT0" }                                    ,
-	{ run_command   , " %.3s"     , "cat /sys/firmware/acpi/platform_profile" } ,
 	{ datetime      , " | %s"     , "%a %b %d %H:%M:%S " }
 };
