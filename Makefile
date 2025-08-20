@@ -9,7 +9,7 @@ clean:
 
 .PHONY: update
 update:
-	git submodule update --init
+	git submodule update --init --remote --merge
 
 .PHONY: apply
 apply:
